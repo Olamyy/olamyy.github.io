@@ -132,24 +132,4 @@ venv.bak/
 .dmypy.json
 dmypy.json
 
-# Pyre type checker
-.pyre/
-
-# Logs
-logs/
-!docs/administration/monitoring/logs
-
-.vscode
-postgres/
-app.db
-.prettierignore
-.obsidian/
-
-translate.py
-migrate.py
-consistency-report.md
-site/
-
-scripts/
-tmp.mdx
-*.bak
+.idea/*

@@ -1,20 +1,14 @@
-site_name: Nathan Catania
-site_url: "https://nathancatania.com"
-site_description: "Official Website of Nathan Catania"
-repo_url: https://github.com/nathancatania/website
-repo_name: nathancatania/website
+site_name: Ola
+site_url: "https://olamyy.github.io"
+site_description: "Ola Wahab's personal website."
+repo_url: https://github.com/olamyy/olamyy.github.io
+repo_name: olamyy/olamyy.github.io
 edit_uri: edit/master/docs/
-copyright: "&copy; 2025, Nathan Catania"
+copyright: "&copy; 2026, Ola Wahab"
 
 theme:
   name: material
   custom_dir: overrides
-  favicon: assets/favicon.png
-  #logo: assets/avatar.png
-  icon:
-    repo: material/github
-    logo: octicons/cpu-16
-    #logo: material/hand-wave
 
   font:
     text: Inter
@@ -28,8 +22,6 @@ theme:
     - navigation.top
 
   palette:
-    # Automatically switches between light & dark modes based on system
-    # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
 
       scheme: default
@@ -39,7 +31,6 @@ theme:
         icon: material/circle-half-full
         name: Switch to dark mode
 
-    # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: blue
@@ -65,12 +56,19 @@ markdown_extensions:
   - md_in_html
 
 extra:
-  cli: "$ ls /home/nathan"
   generator: false
-  subtitle: "B.Eng (Hons, 1st) // Australia // AI // Cybersec"
-  avatar: assets/avatar.JPG
+  subtitle: "I know I was going somewhere with this, I just seem to have followed the sentence into a blind alley."
+  avatar: assets/stewie.jpg
   socials:
-    - linkedin: https://www.linkedin.com/in/nathancatania/
+    - url: https://x.com/__olamilekan__
+      icon: fontawesome/brands/x-twitter
+      name: Twitter
+    - url: https://www.linkedin.com/in/olamilekan-wahab/
+      icon: fontawesome/brands/linkedin
+      name: LinkedIn
+    - url: https://substack.com/@olamilekan
+      icon: simple/substack
+      name: Substack
 
 extra_css:
   - stylesheets/extra.css
