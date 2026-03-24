@@ -1,8 +1,9 @@
 <article class="md-post md-post--excerpt">
     <div class="md-post__content md-typeset">
-      
         <h4><a href="{{ post.url | url }}">{{ post.title }}</a></h4>
-  
+        {% if post.content %}
+          <div class="post-excerpt">{{ post.content }}</div>
+        {% endif %}
     </div>
     <header class="md-post__header">
   
