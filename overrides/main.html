@@ -1,1 +1,12 @@
 {% extends "base.html" %}
+
+{% block site_meta %}
+  {{ super() }}
+  <meta property="og:type" content="{% if page.is_post %}article{% else %}website{% endif %}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title | striptags }}{% else %}{{ config.site_name }}{% endif %}">
+  <meta property="og:description" content="{% if page.meta and page.meta.description %}{{ page.meta.description }}{% elif config.site_description %}{{ config.site_description }}{% endif %}">
+  {% if page.canonical_url %}
+    <meta property="og:url" content="{{ page.canonical_url }}">
+  {% endif %}
+  <meta property="og:site_name" content="{{ config.site_name }}">
+{% endblock %}
