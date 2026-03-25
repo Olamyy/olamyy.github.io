@@ -207,9 +207,13 @@ h4 {
 }
 
 .share-link svg {
-  width: 1rem;
-  height: 1rem;
+  width: 1rem !important;
+  height: 1rem !important;
+  max-width: 1rem !important;
   fill: currentColor;
+  display: inline !important;
+  vertical-align: middle;
+  margin: 0 !important;
 }
 
 .share-copy .share-copy__check {
